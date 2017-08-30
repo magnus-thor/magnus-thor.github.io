@@ -1,0 +1,62 @@
+<!-- # index html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator</title>
+  <script src="src/person.js"></script>
+  <script src="src/bmi_calculator.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="src/bmi_ui.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="css/app.css"></link>
+
+</head>
+<body>
+  <div class="container">
+    <div class="nav-wrapper center-align">
+      <h1>
+        BMI Calculator
+      </h1>
+    </div>
+    <div class="mybox">
+      <div class="radio-button">
+        <p>
+          <input name="group1" type="radio" id="test1" value="metric" checked="yes"/>
+          <label for="test1">Metric</label>
+          <input name="group1" type="radio" id="test2" value="imperial"/>
+          <label for="test2">Imperial</label>
+        </p>
+      </div>
+        <div class="metric bmi">
+          <form>
+            <input type="text" id="weight" placeholder="Weight in kg">
+            <input type="text" id="height" placeholder="Height in cm">
+            <input type="button" id="calculate_metric" value="Calculate Metric">
+          </form>
+        </div>
+        <div class="imperial bmi">
+          <form>
+            <input type="text" id="weight_st" placeholder="Weight in stones">
+            <input type="text" id="weight_lb" placeholder="And lbs">
+            <input type="text" id="height_f" placeholder="Height in feet">
+            <input type="text" id="height_i" placeholder="And inches">
+            <input type="button" id="calculate_imp" value="Calculate Imperial">
+          </form>
+      </div>
+    </div>
+    <form action="#">
+    </form>
+    <div class="center-align message_box">
+      <span id="display_value" class="message"></span>
+      <span id="display_message" class="message"></span>
+      <span id="display_value_2" class="message"></span>
+      <span id="display_message_2" class="message"></span>
+    </div>
+  </div>
+</body>
+</html>
